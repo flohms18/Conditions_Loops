@@ -126,3 +126,16 @@ def GuessNumber():
 
 GuessNumber()
 
+def password():
+    password = "pass"
+    User = input("Your password?")
+    while User != password :
+        print("Wrong Password! Try Again")
+        User = input("Your password?")
+
+    print("Correct!")
+    
+password()
+
+
+
