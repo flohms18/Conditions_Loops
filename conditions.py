@@ -87,3 +87,15 @@ def EvenNumbers(n):
             print(i)
 
 EvenNumbers(42)
+
+
+def Facto(n):
+    if n == 0:
+        return False
+    else:
+        F = 1
+        for i in range(2,n+1):
+            F = F * i
+        print(f"{n}! = {F}")
+
+Facto(4)
