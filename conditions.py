@@ -86,7 +86,7 @@ def EvenNumbers(n):
         if i % 2 == 0:
             print(i)
 
-EvenNumbers(42)
+EvenNumbers(4)
 
 
 def Facto(n):
@@ -99,3 +99,14 @@ def Facto(n):
         print(f"{n}! = {F}")
 
 Facto(4)
+
+def Countdown(n):
+    while n >= 0:
+        print(n)
+        n -= 1
+
+            
+            
+
+
+Countdown(10)
