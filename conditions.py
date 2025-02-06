@@ -58,3 +58,29 @@ def multi(x):
         print(f"{i} x {x} =", x*i)
 
 multi(4)
+
+def primenumber(n):
+    if n > 0:
+        for i in range(n):
+            res = n * (n*1) // 2
+            print(f"La somme des {n} premiers nombres est : {res}")
+            break
+
+primenumber(4)
+
+def CheckPrimeNumber(n):
+    if n <= 1: 
+        return False
+    for i in range(2,n):
+        if n % i == 0: 
+            print("NO")
+            break
+    return True
+        
+
+CheckPrimeNumber(6)
+
+
+
+
+
