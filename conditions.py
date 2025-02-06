@@ -52,3 +52,9 @@ def Operator(x,y):
 
 
 Operator(4,15)
+
+def multi(x):
+    for i in range(1,11):
+        print(f"{i} x {x} =", x*i)
+
+multi(4)
