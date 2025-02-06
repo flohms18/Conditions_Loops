@@ -100,13 +100,29 @@ def Facto(n):
 
 Facto(4)
 
-def Countdown(n):
+def CountDown(n):
     while n >= 0:
         print(n)
         n -= 1
 
-            
-            
+CountDown(10)
 
+import random 
+def GuessNumber():
+    n = random.randint(1,100)
+    print(n)
+    UserGuess = int(input("Guess the number! : "))
+    while UserGuess != n:
+        
+        if UserGuess < n:
+            print("More")
+            UserGuess = int(input("Guess the number! : "))
 
-Countdown(10)
+        else :
+            print("Less")
+            UserGuess = int(input("Guess the number! : "))
+
+    print("Good Job!")
+
+GuessNumber()
+
