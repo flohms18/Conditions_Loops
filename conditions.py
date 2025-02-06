@@ -81,6 +81,9 @@ def CheckPrimeNumber(n):
 CheckPrimeNumber(6)
 
 
+def EvenNumbers(n):
+    for i in range(1,n):
+        if i % 2 == 0:
+            print(i)
 
-
-
+EvenNumbers(42)
