@@ -31,3 +31,15 @@ def IsLeapYear(year):
         print("This is not a leap year !")
 
 IsLeapYear(2020)
+
+def IsPrimeNumber(x):
+    if x > 1:
+        for i in range(2,x):
+            if x % i == 0:
+                print("This is not a prime number !")
+                break
+        else:
+            print("This is a prime number !")
+    else:
+        print("This is not a prime number !")
+
