@@ -43,3 +43,5 @@ def IsPrimeNumber(x):
     else:
         print("This is not a prime number !")
 
+IsPrimeNumber(7)
+
