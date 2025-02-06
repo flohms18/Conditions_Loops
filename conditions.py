@@ -23,3 +23,11 @@ def GreatestNumber(x,y,z):
         print("z is the greatest number !")
 
 GreatestNumber(4,5,6)
+
+def IsLeapYear(year):
+    if year % 4 == 0:
+        print("This is a leap year !")
+    else:
+        print("This is not a leap year !")
+
+IsLeapYear(2020)
