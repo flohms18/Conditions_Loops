@@ -1,60 +1,54 @@
-def OddOrEven(x):
+def OddorEven(x):
     if x % 2 == 0:
-        print("x is even !")
-    else:
-        print("x is odd !")
+        print("x is even")
+    else :
+        print("x is odd")
 
-OddOrEven(4)
+OddorEven(3)
 
-def IsPositive(x):
+def PosNumber(x):
     if x > 0:
-        print("x is positive !")
+        print("x is positive")
+    elif x < 0:
+        print("x is negative")
     else:
-        print("x is negative !")
+        print("x is zero")
 
-IsPositive(-4)
+PosNumber(0)
 
-def GreatestNumber(x,y,z):
+def MaxNumber(x,y,z):
     if x > y and x > z:
-        print("x is the greatest number !")
+        print("x is the greatest")
     elif y > x and y > z:
-        print("y is the greatest number !")
+        print("y is the greatest")
     else:
-        print("z is the greatest number !")
+        print("z is the greatest")
 
-GreatestNumber(4,5,6)
+MaxNumber(7,5,3)
 
-def IsLeapYear(year):
+def LeapYear(year):
     if year % 4 == 0:
-        print("This is a leap year !")
+        print(f"{year} is a leap year !")
     else:
-        print("This is not a leap year !")
+        print("This is not a leap year")
 
-IsLeapYear(2020)
-
-def IsPrimeNumber(x):
-    if x > 1:
-        for i in range(2,x):
-            if x % i == 0:
-                print("This is not a prime number !")
-                break
-        else:
-            print("This is a prime number !")
-    else:
-        print("This is not a prime number !")
-
-IsPrimeNumber(7)
+LeapYear(2021)
 
 def Operator(x,y):
-    calculation = input("Enter the operation you want to perform: ")
-    if calculation == "Addition":
-        print("Addition: ", x + y)
-    elif calculation == "Subtraction":   
-        print("Subtraction: ", x - y)
-    elif calculation == "Multiplication":
-        print("Multiplication: ", x * y)
-    elif calculation == "Division":
-        print("Division: ", x / y)
+    c = input("Which operation do you want to perform (A/M/S/D) : ")
+    if c == "A" or "M" or "S" or "D":
+        if c == "A":
+            print(f"A : ",x + y)
+        if c == "M":
+            print(f"S : ",x * y)
+        if c == "S" and x > y:
+            print(f"M : ",x - y)
+        if c == "D":
+            print(f"D: ",x / y)
+            
+                
+    else:
+            print("Error ! Incorrect letter")
 
-Operator(4,2)
 
+Operator(4,15)
